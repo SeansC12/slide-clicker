@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      .clicker-button {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+    </style>
+    <script>
+      async function clickSlide(cmd) {
+        await fetch("/", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ cmd: cmd }),
+        });
+        console.log("test");
+      }
+    </script>
+  </head>
+  <body>
+    <button
+      onclick="clickSlide('left')"
+      class="clicker-button"
+    >
+      Previous slide
+    </button>
+    <button
+      onclick="clickSlide('right')"
+      class="clicker-button"
+    >
+      Next slide
+    </button>
+  </body>
+</html>
