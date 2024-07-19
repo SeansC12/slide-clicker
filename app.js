@@ -12,9 +12,8 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", function (req, res) {
-  console.log(req.body);
   robot.keyTap(req.body.cmd);
-  res.json(req.body);
+  res.json("All ok");
 });
 
 app.listen(port, () => {
