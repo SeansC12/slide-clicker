@@ -7,5 +7,9 @@
     "test": "node app.js"
   },
   "author": "Sean",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "robotjs": "^0.6.0"
+  }
 }
