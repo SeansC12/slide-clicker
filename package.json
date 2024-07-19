@@ -1,0 +1,11 @@
+{
+  "name": "slide-clicker",
+  "version": "1.0.0",
+  "description": "A slide clicker for Google Slides.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Sean",
+  "license": "ISC"
+}
